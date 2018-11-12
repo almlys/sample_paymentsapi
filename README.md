@@ -2,7 +2,7 @@
 RESTful Payments API Example
 ============================
 
-This a payments API Example based on the [Flask RESTplus Sample](https://github.com/frol/flask-restplus-server-example)
+This is a payments API Example based on the [Flask RESTplus Sample](https://github.com/frol/flask-restplus-server-example)
 
 Docker is required in order to build and play with this demo project, although you might use a python 3.7 virtualenv.
 
