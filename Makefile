@@ -65,4 +65,4 @@ docker-test: ##@build Runs docker tests
 	docker run -it --rm payments_test tests
 
 run: ##@dev Runs development app within docker
-	docker run -p 5000:500 -it --rm payments_test
+	docker run -p 5000:5000 -it --rm payments_test
