@@ -7,7 +7,6 @@ example.db
 .git*
 
 deploy
-tests
 clients
 
 __pycache__

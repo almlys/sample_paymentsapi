@@ -28,9 +28,6 @@ login_manager = LoginManager()
 from flask_marshmallow import Marshmallow
 marshmallow = Marshmallow()
 
-from .auth import OAuth2Provider
-oauth2 = OAuth2Provider()
-
 from . import api
 
 
@@ -45,6 +42,5 @@ def init_app(app):
             login_manager,
             marshmallow,
             api,
-            oauth2,
         ):
         extension.init_app(app)

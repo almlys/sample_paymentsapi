@@ -121,6 +121,7 @@ class PatchJSONParameters(Parameters):
         """
         if state is None:
             state = {}
+        log.debug(str(operations))
         for operation in operations:
             if not cls._process_patch_operation(operation, obj=obj, state=state):
                 log.info(

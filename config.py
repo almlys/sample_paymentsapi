@@ -29,27 +29,8 @@ class BaseConfig(object):
 
     REVERSE_PROXY_SETUP = os.getenv('EXAMPLE_API_REVERSE_PROXY_SETUP', False)
 
-    AUTHORIZATIONS = {
-        'oauth2_password': {
-            'type': 'oauth2',
-            'flow': 'password',
-            'scopes': {},
-            'tokenUrl': '/auth/oauth2/token',
-        },
-        # TODO: implement other grant types for third-party apps
-        #'oauth2_implicit': {
-        #    'type': 'oauth2',
-        #    'flow': 'implicit',
-        #    'scopes': {},
-        #    'authorizationUrl': '/auth/oauth2/authorize',
-        #},
-    }
-
     ENABLED_MODULES = (
-        'auth',
-
-        'users',
-        'teams',
+        'payments',
 
         'api',
     )
@@ -58,8 +39,8 @@ class BaseConfig(object):
 
     SWAGGER_UI_JSONEDITOR = True
     SWAGGER_UI_OAUTH_CLIENT_ID = 'documentation'
-    SWAGGER_UI_OAUTH_REALM = "Authentication for Flask-RESTplus Example server documentation"
-    SWAGGER_UI_OAUTH_APP_NAME = "Flask-RESTplus Example server documentation"
+    SWAGGER_UI_OAUTH_REALM = "Authentication for Payments API"
+    SWAGGER_UI_OAUTH_APP_NAME = "Payments API Example"
 
     # TODO: consider if these are relevant for this project
     SQLALCHEMY_TRACK_MODIFICATIONS = True

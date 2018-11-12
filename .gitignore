@@ -53,3 +53,8 @@ example.db
 .idea/
 clients/*/swagger.json
 clients/*/dist
+
+.envrc
+.pyenv
+.python-version
+*.iml
